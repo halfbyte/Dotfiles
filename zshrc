@@ -27,7 +27,7 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; f
 
 if [[ -s "/usr/local/Cellar/cdargs/1.35/contrib/cdargs-bash.sh" ]] ; then source "/usr/local/Cellar/cdargs/1.35/contrib/cdargs-bash.sh" ; fi
 
-if [[ -s "$HOME/Documents/docbook-xsl-1.75.2/profile.incl" ]] ; then source "$HOME/Documents/docbook-xsl-1.75.2/profile.incl" ; fi
+# if [[ -s "$HOME/Documents/docbook-xsl-1.75.2/profile.incl" ]] ; then source "$HOME/Documents/docbook-xsl-1.75.2/profile.incl" ; fi
 
 if [ -e "/usr/local/CrossPack-AVR" ]; then
 PATH="$PATH:/usr/local/CrossPack-AVR/bin"

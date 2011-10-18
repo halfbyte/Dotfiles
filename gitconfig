@@ -1,0 +1,19 @@
+[user]
+	name = Jan Krutisch
+	email = jan@krutisch.de
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  pr = pull --rebase
+  rc = rebase --continue
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+[merge]
+	tool = opendiff
+[core]
+	excludesfile = /Users/jan/.gitignore
+[github]
+	user = halfbyte
