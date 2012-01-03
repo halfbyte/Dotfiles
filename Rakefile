@@ -2,7 +2,7 @@ desc "check for collisions with real files"
 task :check_collisions do
   Dir['*'].each do |file|
     if file != 'Rakefile'
-      target = "$HOME/.#{file}"
+      target = File.expand_path("~/.#{file}")
       if File.exist?(target) && !File.symlink?(target)
         fail "collision #{target} exists!"
       end
