@@ -39,3 +39,7 @@ export EDITOR="/usr/bin/mate -w"
 export HAXE_LIBRARY_PATH="`brew --prefix`/share/haxe/std"
 
 export PATH=`npm bin`:$PATH
+
+alias t="ruby -Itest"
+
+alias webserver="python -m SimpleHTTPServer" 
