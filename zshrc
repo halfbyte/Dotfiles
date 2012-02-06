@@ -34,7 +34,7 @@ PATH="$PATH:/usr/local/CrossPack-AVR/bin"
 export PATH
 fi
 
-export EDITOR="/usr/bin/mate -w"
+export EDITOR="subl -w"
 
 export HAXE_LIBRARY_PATH="`brew --prefix`/share/haxe/std"
 
@@ -43,3 +43,5 @@ export PATH=`npm bin`:$PATH
 alias t="ruby -Itest"
 
 alias webserver="python -m SimpleHTTPServer" 
+
+alias e="subl"
