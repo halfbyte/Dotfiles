@@ -55,3 +55,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 if [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] ; then source "/usr/local/bin/virtualenvwrapper.sh" ; fi
 
+export CC=/usr/bin/gcc-4.2
