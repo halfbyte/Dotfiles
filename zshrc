@@ -40,6 +40,8 @@ export HAXE_LIBRARY_PATH="`brew --prefix`/share/haxe/std"
 
 export PATH=`npm bin`:$PATH
 
+export PYTHONSTARTUP=~/.pythonstartup
+
 alias t="ruby -Itest"
 
 alias webserver="python -m SimpleHTTPServer" 
@@ -47,6 +49,8 @@ alias webserver="python -m SimpleHTTPServer"
 alias e="subl"
 
 alias git="hub"
+
+alias st="open -a SourceTree"
 
 if [[ -s "$HOME/.private_zshrc" ]] ; then source "$HOME/.private_zshrc" ; fi
 
