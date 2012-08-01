@@ -21,7 +21,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
 
 # Customize to your needs...
-export PATH=/usr/local/mysql/bin:/usr/local/mongodb/bin:/Applications/liftweb-1.0.1/apache-maven/bin:/usr/local/git/bin:/Users/jan/bin:/Users/jan/.gem/ruby/1.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin
+export PATH=/usr/local/mysql/bin:/usr/local/mongodb/bin:/Applications/liftweb-1.0.1/apache-maven/bin:/usr/local/git/bin:/Users/jan/bin:/Users/jan/.gem/ruby/1.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; fi
 
