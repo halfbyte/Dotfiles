@@ -14,7 +14,7 @@ export ZSH_THEME="juanghurtado"
 # Uncomment following line if you want to disable colors in ls
 # export DISABLE_LS_COLORS="true"
 
-plugins=(git textmate ruby bundler git-flow github rvm brew)
+plugins=(git textmate ruby bundler github rvm brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -60,3 +60,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 if [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] ; then source "/usr/local/bin/virtualenvwrapper.sh" ; fi
 
 export CC=/usr/bin/gcc-4.2
+
+
+export PATH=$PATH:$HOME/Documents/android-sdk-macosx/platform-tools:$HOME/Documents/android-sdk-macosx/tools
