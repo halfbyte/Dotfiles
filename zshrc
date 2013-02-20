@@ -44,13 +44,14 @@ export PYTHONSTARTUP=~/.pythonstartup
 
 alias t="ruby -Itest"
 
-alias webserver="python -m SimpleHTTPServer" 
+alias webserver="python -m SimpleHTTPServer"
 
 alias e="subl"
 
-alias git="hub"
+# alias git="hub"
 
 alias st="open -a SourceTree"
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
 if [[ -s "$HOME/.private_zshrc" ]] ; then source "$HOME/.private_zshrc" ; fi
 
@@ -59,7 +60,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 if [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] ; then source "/usr/local/bin/virtualenvwrapper.sh" ; fi
 
-
+if [[ -d "/usr/local/share/npm/bin" ]] ; then export PATH=$PATH:/usr/local/share/npm/bin ; fi
 
 export PATH=$PATH:$HOME/Documents/android-sdk-macosx/platform-tools:$HOME/Documents/android-sdk-macosx/tools
 export CC=/usr/local/bin/gcc-4.2
