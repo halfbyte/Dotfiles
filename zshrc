@@ -21,7 +21,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
 
 # Customize to your needs...
-export PATH=/usr/local/mysql/bin:/usr/local/mongodb/bin:/Applications/liftweb-1.0.1/apache-maven/bin:/usr/local/git/bin:/Users/jan/bin:/Users/jan/.gem/ruby/1.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin
+export PATH=$PATH:/usr/local/mysql/bin:/usr/local/mongodb/bin:/Applications/liftweb-1.0.1/apache-maven/bin:/usr/local/git/bin:/Users/jan/bin:/Users/jan/.gem/ruby/1.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; fi
 
@@ -34,7 +34,8 @@ PATH="$PATH:/usr/local/CrossPack-AVR/bin"
 export PATH
 fi
 
-export EDITOR="subl -w"
+export EDITOR="mate"
+export GIT_EDITOR="$EDITOR -w"
 
 export HAXE_LIBRARY_PATH="`brew --prefix`/share/haxe/std"
 
@@ -46,9 +47,7 @@ alias t="ruby -Itest"
 
 alias webserver="python -m SimpleHTTPServer"
 
-alias e="subl"
-
-# alias git="hub"
+alias e="$EDITOR"
 
 alias st="open -a SourceTree"
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
@@ -61,6 +60,15 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 if [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] ; then source "/usr/local/bin/virtualenvwrapper.sh" ; fi
 
 if [[ -d "/usr/local/share/npm/bin" ]] ; then export PATH=$PATH:/usr/local/share/npm/bin ; fi
+export PATH=$PATH:$HOME/Documents/android-sdk/platform-tools:$HOME/Documents/android-sdk/tools
 
-export PATH=$PATH:$HOME/Documents/android-sdk-macosx/platform-tools:$HOME/Documents/android-sdk-macosx/tools
 export CC=/usr/local/bin/gcc-4.2
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+
+### NPM
+
+export PATH="/usr/local/share/npm/bin/:$PATH"
+
