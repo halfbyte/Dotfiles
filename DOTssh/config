@@ -1,0 +1,3 @@
+# for dpa forwarded hosts
+Host localhost
+  ForwardAgent yes

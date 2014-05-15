@@ -34,7 +34,7 @@ PATH="$PATH:/usr/local/CrossPack-AVR/bin"
 export PATH
 fi
 
-export EDITOR="mate"
+export EDITOR="atom"
 export GIT_EDITOR="$EDITOR -w"
 
 export HAXE_LIBRARY_PATH="`brew --prefix`/share/haxe/std"
@@ -49,8 +49,12 @@ alias webserver="python -m SimpleHTTPServer"
 
 alias e="$EDITOR"
 
+# alias git="hub"
+
 alias st="open -a SourceTree"
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+
+alias bower='noglob bower'
 
 if [[ -s "$HOME/.private_zshrc" ]] ; then source "$HOME/.private_zshrc" ; fi
 
@@ -62,13 +66,11 @@ if [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] ; then source "/usr/local/bin/
 if [[ -d "/usr/local/share/npm/bin" ]] ; then export PATH=$PATH:/usr/local/share/npm/bin ; fi
 export PATH=$PATH:$HOME/Documents/android-sdk/platform-tools:$HOME/Documents/android-sdk/tools
 
-export CC=/usr/local/bin/gcc-4.2
+export PATH=$PATH:$HOME/android-sdk/tools:$HOME/android-sdk/platform-tools
+
+source /usr/local/bin/virtualenvwrapper.sh
+
+# export CC=/usr/local/bin/gcc-4.2
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-
-### NPM
-
-export PATH="/usr/local/share/npm/bin/:$PATH"
-
