@@ -18,6 +18,8 @@ plugins=(git textmate ruby bundler github rvm brew)
 
 source $ZSH/oh-my-zsh.sh
 
+source $HOME/zsh-scripts/k.zsh
+
 unsetopt auto_name_dirs
 
 ulimit -n 2048
@@ -26,7 +28,6 @@ ulimit -n 2048
 export PATH=$PATH:/usr/local/mysql/bin:/usr/local/mongodb/bin:/usr/local/git/bin:/Users/jan/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; fi
-echo "AFTER RVM init"
 if [[ -s "/usr/local/Cellar/cdargs/1.35/contrib/cdargs-bash.sh" ]] ; then source "/usr/local/Cellar/cdargs/1.35/contrib/cdargs-bash.sh" ; fi
 
 # if [[ -s "$HOME/Documents/docbook-xsl-1.75.2/profile.incl" ]] ; then source "$HOME/Documents/docbook-xsl-1.75.2/profile.incl" ; fi
