@@ -1,9 +1,9 @@
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
-
+echo "START"
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="juanghurtado"
+export ZSH_THEME="bira"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -20,11 +20,14 @@ source $ZSH/oh-my-zsh.sh
 
 unsetopt auto_name_dirs
 
+ulimit -n 2048
+
+
 # Customize to your needs...
 export PATH=$PATH:/usr/local/mysql/bin:/usr/local/mongodb/bin:/Applications/liftweb-1.0.1/apache-maven/bin:/usr/local/git/bin:/Users/jan/bin:/Users/jan/.gem/ruby/1.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; fi
-
+echo "AFTER RVM init"
 if [[ -s "/usr/local/Cellar/cdargs/1.35/contrib/cdargs-bash.sh" ]] ; then source "/usr/local/Cellar/cdargs/1.35/contrib/cdargs-bash.sh" ; fi
 
 # if [[ -s "$HOME/Documents/docbook-xsl-1.75.2/profile.incl" ]] ; then source "$HOME/Documents/docbook-xsl-1.75.2/profile.incl" ; fi
@@ -60,17 +63,17 @@ if [[ -s "$HOME/.private_zshrc" ]] ; then source "$HOME/.private_zshrc" ; fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-
+echo "B4 VENVWRAPPER"
 if [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] ; then source "/usr/local/bin/virtualenvwrapper.sh" ; fi
-
+echo "AFTER VENVRAPPER"
 if [[ -d "/usr/local/share/npm/bin" ]] ; then export PATH=$PATH:/usr/local/share/npm/bin ; fi
 export PATH=$PATH:$HOME/Documents/android-sdk/platform-tools:$HOME/Documents/android-sdk/tools
 
 export PATH=$PATH:$HOME/android-sdk/tools:$HOME/android-sdk/platform-tools
 
-source /usr/local/bin/virtualenvwrapper.sh
-
 # export CC=/usr/local/bin/gcc-4.2
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+echo "END !"
+

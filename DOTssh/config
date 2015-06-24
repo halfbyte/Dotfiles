@@ -1,3 +1,34 @@
 # for dpa forwarded hosts
 Host localhost
   ForwardAgent yes
+Host kaus.uberspace.de
+  ForwardAgent yes
+
+Host nuc
+  Hostname nuc.local
+  User jan
+  ForwardAgent yes
+  
+
+Host krutisch.de
+  Hostname vetinari.krutisch.de
+  User web
+  ForwardAgent yes
+
+Host webstaging
+  ForwardAgent yes
+  HostName demo.gpredictive.de
+  Port 1022
+  User gpred
+
+Host gpredgate
+  ForwardAgent yes
+  HostName 212.83.36.124
+  Port 1022
+  User jk
+
+Host deploy
+  ForwardAgent yes
+  Hostname deploy.
+  Port 1022
+  User gpred
